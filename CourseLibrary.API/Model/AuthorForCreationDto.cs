@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace CourseLibrary.API.Model
 {
-    public class AuthorsDto
+    public class AuthorForCreationDto
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
+        public string FIrstName { get; set; }
+        public string LastName { get; set; }
+        public DateTimeOffset DateOfBirth{ get; set; } 
         public string MainCategory { get; set; }
     }
-
-    
 }
