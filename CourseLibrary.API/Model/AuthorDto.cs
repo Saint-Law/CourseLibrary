@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CourseLibrary.API.Model
 {
-    public class AuthorsDto
+    public class AuthorDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
