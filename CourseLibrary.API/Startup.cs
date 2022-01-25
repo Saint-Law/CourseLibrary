@@ -25,7 +25,11 @@ namespace CourseLibrary.API
         public void ConfigureServices(IServiceCollection services)
         {
             //This is added to make sure our output returns either in json or xml
-            services.AddControllers();
+            services.AddControllers(setupAction => 
+            {
+                setupAction.ReturnHttpNotAcceptable = true;
+
+            }).AddXmlDataContractSerializerFormatters();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
              
