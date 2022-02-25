@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CourseLibrary.API.Model
-{ 
-    public class CourseForCreationDto : CourseForManipulationDto
+{
+
+    public class CourseForUpdateDto : CourseForManipulationDto
     {
        
-        
+
     }
 }
